@@ -23,18 +23,18 @@ const Provider = (sequelize, DataTypes) => {
     phoneNumber: DataTypes.STRING,
     situation: DataTypes.STRING,
     situationDate: DataTypes.STRING,
-    cnpjId: { type:DataTypes.INTEGER, foreignKey: true },
-    email: DataTypes.STRING
+    cnpjId: { type: DataTypes.INTEGER, foreignKey: true },
+    email: DataTypes.STRING,
   });
 
-
   Provider.associate = (models) => {
-    Provider.belongsTo(models.Cnpj,
-      { foreignKey: 'id', as: 'providers_ibfk_1'})
-  }
+    Provider.belongsTo(models.Cnpj, {
+      foreignKey: 'id',
+      as: 'providers_ibfk_1',
+    });
+  };
 
   return Provider;
 };
 
 module.exports = Provider;
-
