@@ -9,19 +9,23 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       orderNfId: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true,
       },
       orderNumber: {
         type: Sequelize.STRING
       },
       orderPath: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true,
       },
       orderFileName: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true,
       },
       orderOriginalName: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true,
       },
       emissionDate: {
         type: Sequelize.STRING

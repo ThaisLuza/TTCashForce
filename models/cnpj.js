@@ -1,10 +1,13 @@
-const cnpj = (sequelize, DataTypes) => {
-  const cnpj = sequelize.define('cnpj', {
+const Cnpj = (sequelize, DataTypes) => {
+  const Cnpj = sequelize.define('Cnpj', {
     cnpj: DataTypes.STRING,
     companyType: DataTypes.INTEGER,
   });
 
-  return cnpj;
+
+
+
+  return Cnpj;
 };
 
-module.exports = cnpj;
+module.exports = Cnpj;

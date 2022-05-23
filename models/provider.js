@@ -32,6 +32,7 @@ const Provider = (sequelize, DataTypes) => {
       foreignKey: 'id',
       as: 'providers_ibfk_1',
     });
+    
   };
 
   return Provider;

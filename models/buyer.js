@@ -30,6 +30,8 @@ const Buyer = (sequelize, DataTypes) => {
       { foreignKey: 'id', as: 'buyers_ibfk_1'})
   }
 
+ 
+
 
   return Buyer;
 };
